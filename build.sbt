@@ -7,6 +7,7 @@ ThisBuild / organizationName := "example"
 
 lazy val input = "./src/main/scala/input/Input.scala"
 lazy val output = "./src/main/scala/output/output.sql"
+
 lazy val caseObjectToSqlEnum = taskKey[Unit]("caseObjectToSqlEnum")
 lazy val macro_test = (project in file("macro_test"))
   .settings(
